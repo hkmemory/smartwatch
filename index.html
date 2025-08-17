@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTime Pro - 智慧生活新體驗</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'purple-primary': '#8B5CF6',
+                        'purple-light': '#A78BFA',
+                        'purple-dark': '#7C3AED',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Added logo image to header -->
+            <div class="flex items-center space-x-3">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=40&h=40&fit=crop&crop=center" 
+                     alt="SmartTime Logo" 
+                     class="w-10 h-10 rounded-lg">
+                <div class="text-2xl font-bold text-purple-primary">SmartTime</div>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="text-gray-600 hover:text-purple-primary transition-colors">特色</a>
+                <a href="#pricing" class="text-gray-600 hover:text-purple-primary transition-colors">價格</a>
+                <a href="#reviews" class="text-gray-600 hover:text-purple-primary transition-colors">評價</a>
+                <a href="#faq" class="text-gray-600 hover:text-purple-primary transition-colors">常見問題</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-purple-100 to-pink-50 py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                SmartTime Pro
+            </h1>
+            <p class="text-xl md:text-2xl text-purple-primary font-semibold mb-8">
+                智慧生活，從手腕開始 ⌚✨
+            </p>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                結合時尚設計與先進科技，讓每一秒都充滿智慧與活力
+            </p>
+            <div class="mb-12">
+                <!-- Updated hero image with better query for smartwatch product -->
+                <img src="https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&h=400&fit=crop&crop=center" 
+                     alt="SmartTime Pro 智慧手錶" 
+                     class="mx-auto rounded-2xl shadow-2xl">
+            </div>
+            <a href="#pricing" class="bg-purple-primary hover:bg-purple-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+                立即購買 🚀
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+                三大核心亮點 ⭐
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-8 rounded-2xl bg-purple-50 hover:bg-purple-100 transition-colors">
+                    <!-- Replaced emoji with actual health monitoring image -->
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=80&h=80&fit=crop&crop=center" 
+                             alt="健康監測" 
+                             class="mx-auto w-20 h-20 rounded-full">
+                    </div>
+                    <h3 class="text-2xl font-bold text-purple-primary mb-4">24小時健康監測</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        心率、血氧、睡眠品質全天候監控，讓您隨時掌握身體狀況，活出健康每一天
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-8 rounded-2xl bg-pink-50 hover:bg-pink-100 transition-colors">
+                    <!-- Replaced emoji with sports/fitness image -->
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=80&h=80&fit=crop&crop=center" 
+                             alt="運動模式" 
+                             class="mx-auto w-20 h-20 rounded-full">
+                    </div>
+                    <h3 class="text-2xl font-bold text-purple-primary mb-4">50+運動模式</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        跑步、游泳、瑜伽、騎行...專業運動數據分析，讓每次運動都更有效果
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-8 rounded-2xl bg-blue-50 hover:bg-blue-100 transition-colors">
+                    <!-- Replaced emoji with battery/charging image -->
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=80&h=80&fit=crop&crop=center" 
+                             alt="長續航" 
+                             class="mx-auto w-20 h-20 rounded-full">
+                    </div>
+                    <h3 class="text-2xl font-bold text-purple-primary mb-4">7天超長續航</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        一次充電，使用一週！快充技術30分鐘充電80%，告別電量焦慮
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gradient-to-r from-purple-100 to-pink-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">
+                限時優惠價格 🎉
+            </h2>
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-md mx-auto">
+                <!-- Added product image to pricing section -->
+                <div class="mb-6">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=center" 
+                         alt="SmartTime Pro" 
+                         class="mx-auto w-32 h-32 rounded-xl">
+                </div>
+                <div class="text-gray-500 text-lg line-through mb-2">原價 NT$ 8,990</div>
+                <div class="text-5xl font-bold text-purple-primary mb-4">NT$ 5,990</div>
+                <div class="text-red-500 font-semibold mb-8">限時33%折扣！</div>
+                
+                <ul class="text-left space-y-3 mb-8">
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-3">✓</span>
+                        免費全台配送
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-3">✓</span>
+                        一年保固服務
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-3">✓</span>
+                        30天無條件退貨
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-3">✓</span>
+                        專屬APP終身免費
+                    </li>
+                </ul>
+                
+                <button class="w-full bg-purple-primary hover:bg-purple-dark text-white py-4 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-lg">
+                    立即下單 💳
+                </button>
+                <p class="text-sm text-gray-500 mt-4">安全付款 | 快速出貨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+                用戶真實推薦 💬
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-gray-50 p-6 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <!-- Updated user avatar with specific query for female user -->
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face" 
+                             alt="小美的頭像" 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-semibold text-gray-900">小美</div>
+                            <div class="text-yellow-500">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "用了三個月，睡眠品質真的改善很多！運動數據也很準確，推薦給所有注重健康的朋友！"
+                    </p>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="bg-gray-50 p-6 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <!-- Updated user avatar with specific query for male user -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" 
+                             alt="阿傑的頭像" 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-semibold text-gray-900">阿傑</div>
+                            <div class="text-yellow-500">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "續航力超強！一週充一次電就夠了，而且外型很時尚，同事都問我在哪買的。"
+                    </p>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="bg-gray-50 p-6 rounded-2xl">
+                    <div class="flex items-center mb-4">
+                        <!-- Updated user avatar with specific query for female professional -->
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" 
+                             alt="Linda的頭像" 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-semibold text-gray-900">Linda</div>
+                            <div class="text-yellow-500">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "功能豐富但操作簡單，媽媽級用戶也能輕鬆上手。客服態度也很好，值得購買！"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+                常見問題 ❓
+            </h2>
+            <!-- Added FAQ illustration image -->
+            <div class="text-center mb-12">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300&h=150&fit=crop&crop=center" 
+                     alt="常見問題" 
+                     class="mx-auto w-64 h-32 rounded-lg">
+            </div>
+            <div class="space-y-6">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-purple-primary mb-3">
+                        Q: SmartTime Pro 防水嗎？
+                    </h3>
+                    <p class="text-gray-600">
+                        A: 是的！具備IP68防水等級，可在游泳、洗澡時正常使用，無需擔心進水問題。
+                    </p>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-purple-primary mb-3">
+                        Q: 支援哪些手機系統？
+                    </h3>
+                    <p class="text-gray-600">
+                        A: 支援 iOS 10.0 以上及 Android 6.0 以上系統，涵蓋市面上99%的智慧型手機。
+                    </p>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-purple-primary mb-3">
+                        Q: 如何更換錶帶？
+                    </h3>
+                    <p class="text-gray-600">
+                        A: 採用快拆設計，無需工具即可輕鬆更換。我們提供多種顏色錶帶供選擇。
+                    </p>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-purple-primary mb-3">
+                        Q: 保固期間多長？
+                    </h3>
+                    <p class="text-gray-600">
+                        A: 提供一年原廠保固，涵蓋硬體故障維修。另有延長保固方案可選購。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <!-- Added footer logo -->
+            <div class="mb-4">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=50&h=50&fit=crop&crop=center" 
+                     alt="SmartTime Logo" 
+                     class="mx-auto w-12 h-12 mb-2 rounded-lg">
+                <div class="text-3xl font-bold text-purple-light">SmartTime</div>
+            </div>
+            <p class="text-gray-400 mb-8">智慧生活，從手腕開始</p>
+            <div class="flex justify-center space-x-8 mb-8">
+                <a href="#" class="text-gray-400 hover:text-purple-light transition-colors">關於我們</a>
+                <a href="#" class="text-gray-400 hover:text-purple-light transition-colors">客服中心</a>
+                <a href="#" class="text-gray-400 hover:text-purple-light transition-colors">隱私政策</a>
+                <a href="#" class="text-gray-400 hover:text-purple-light transition-colors">使用條款</a>
+            </div>
+            <p class="text-gray-500 text-sm">
+                © 2024 SmartTime. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
